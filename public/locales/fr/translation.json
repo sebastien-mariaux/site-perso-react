@@ -1,0 +1,6 @@
+{
+  "mainPage.age": "{{age}} ans",
+  "mainPage.codeSince": "Code depuis 2015",
+  "mainPage.experience": "{{experience}} ans d'expérience en entreprise",
+  "mainPage.role": "Développeur Backend"
+}

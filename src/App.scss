@@ -1,0 +1,55 @@
+@import 'MainPage/Languages.scss';
+
+@font-face {
+  font-family: "cinzel";
+  src: local('cinzel'),
+    url("./assets/fonts/cinzel/Cinzel-Regular.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "cinzel-bold";
+  src: local('cinzel-bold'),
+    url("./assets/fonts/cinzel/Cinzel-Bold.otf") format("truetype");
+}
+
+
+body {
+  background-color: rgb(71, 120, 153);
+  margin: 0;
+}
+
+.social-icons {
+  a {
+    color: #fff;
+    margin: 0 0.5em;
+  }
+
+  .github:hover {
+    color: #FFD43B;
+  }
+
+  .linkedin:hover {
+    color: #A91401;
+  }
+
+  .cv:hover {
+    color: rgb(97, 218, 251);
+  }
+
+}
+
+footer {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  color: #fff;  
+}
+
+footer a {
+  color: #fff
+}
+
+.button-like {
+  &:hover {
+    cursor: pointer;
+  }
+}

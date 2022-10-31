@@ -1,0 +1,4 @@
+.languages :not(:last-child):after {
+  color: #fff;
+  content: ' | ';
+}
