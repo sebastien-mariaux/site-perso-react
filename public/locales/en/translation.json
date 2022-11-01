@@ -1,6 +1,17 @@
 {
+  "education.title": "Education",
+  "experiences.title": "Professional experiences",
   "mainPage.age": "{{age}} years old",
   "mainPage.codeSince": "Code since 2015",
   "mainPage.experience": "{{experience}} year of corporate experience",
-  "mainPage.role": "Backend developper"
+  "mainPage.more": "More about me...",
+  "mainPage.role": "Backend developper",
+  "noContent.design": "Design and UI/UX skills",
+  "sider.menu.experiences": "Experiences",
+  "sider.menu.education": "Education",
+  "sider.menu.design": "UI/UX",
+  "sider.menu.skills": "Stack",
+  "skills.generalStack": "General stack",
+  "skills.mainLanguages": "Preferred languages",
+  "skills.title": "Technical Stack"
 }

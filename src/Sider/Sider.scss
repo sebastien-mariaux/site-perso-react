@@ -1,0 +1,36 @@
+.menu-items {
+  &:hover {
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  &.active {
+    color: #61dafb;
+    font-weight: bold;
+  }
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3em;
+}
+
+@media screen and (min-width: 1224px) {
+  .sider {
+    width: 50%;
+    margin-top: 50px;
+  }
+
+  .menu {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .menu-items {
+    .active {
+      border-bottom: 4px solid #fff
+    }
+  }
+
+}

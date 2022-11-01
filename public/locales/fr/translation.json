@@ -1,6 +1,17 @@
 {
+  "education.title": "Formation",
+  "experiences.title": "Expériences professionnelles",
   "mainPage.age": "{{age}} ans",
   "mainPage.codeSince": "Code depuis 2015",
   "mainPage.experience": "{{experience}} ans d'expérience en entreprise",
-  "mainPage.role": "Développeur Backend"
+  "mainPage.more": "En savoir plus...",
+  "mainPage.role": "Développeur Backend",
+  "noContent.design": "Compétences en Design et UI/UX",
+  "sider.menu.experiences": "Expériences",
+  "sider.menu.education": "Formation",
+  "sider.menu.design": "UI/UX",
+  "sider.menu.skills": "Stack",
+  "skills.generalStack": "Environnement technique",
+  "skills.mainLanguages": "Technos privilégiées",
+  "skills.title": "Stack technique"
 }

@@ -4,12 +4,10 @@ import profile from '../assets/img/profile.jpg'
 import profileHover from '../assets/img/profileHover.jpg'
 import Description from "./Description"
 import Languages from "./Languages"
-import Socials from "./Socials"
 
 const styles = {
   header: {
     marginTop: '50px',
-    fontFamily: 'cinzel',
     height: '100%',
     backgroundColor: 'rgb(71, 120, 153)',
     color: '#fff',
@@ -28,27 +26,28 @@ const styles = {
     backgroundRepeat: "noRepeat",
     backgroundSize: "150px",
   },
-  colors: {
-    python: {
-      color: '#FFD43B'
-    },
-    ruby: {
-      color: '#A91401'
-    },
-    react: {
-      color: 'rgb(97, 218, 251)'
-    }
+  h1: {
+    fontSize: '1.8rem'
+  },
+  h2: {
+    fontFamily: 'cinzel-bold',
+    marginTop: 0,
+    fontSize: '1.8rem'
   }
 }
 
-export default function MainPage() {
+export default function MainPage({ displaySider, setDisplaySider }) {
   const [profileImg, setProfileImg] = useState(profile)
   const { t } = useTranslation()
+
+  const openSider = () => {
+    setDisplaySider(true)
+  }
 
 
   return (
     <div style={styles.header}>
-      <h2>Sébastien MARIAUX</h2>
+      <h2 style={styles.h2}>Sébastien MARIAUX</h2>
       <div style={styles.profileImgContainer}>
         <img
           src={profileImg}
@@ -58,11 +57,15 @@ export default function MainPage() {
           onMouseOut={() => setProfileImg(profile)}
         />
       </div>
-      <h1>{t('mainPage.role')}</h1>
+      <h1 style={styles.h1}>{t('mainPage.role')}</h1>
       <Languages />
-
       <Description />
-      <Socials />
+      {!displaySider && <button
+        style={{ background: 'none', border: 'none', color: "#fff", marginTop: '40px' }}
+        onClick={openSider}
+      >
+        {t('mainPage.more')}
+      </button>}
     </div>
   )
 }

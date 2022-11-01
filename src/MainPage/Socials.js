@@ -1,9 +1,9 @@
 import cvFr from '../assets/docs/cv_fr.pdf'
 
-export default function Socials(){
-  return(
+export default function Socials() {
+  return (
     <>
-    <p className="social-icons">
+      <p className="social-icons">
         <a href="https://github.com/sebastien-mariaux"
           className="github"
           target="_blank"
@@ -25,6 +25,7 @@ export default function Socials(){
           title="CV">
           <i className="fas fa-file-export fa-2x"></i>
         </a>
+
       </p>
     </>
   )
