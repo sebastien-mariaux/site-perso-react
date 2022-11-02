@@ -13,6 +13,13 @@ export const projectsFr = [
     description: 'Le jeu du clivage',
     repo: 'https://github.com/sebastien-mariaux/droiche'
   },
+  {
+    title: "Advent of Code 2020",
+    technos: "Rust",
+    url: "https://adventofcode.com/2020",
+    description: "Ma participation au grand jeu de Noël.",
+    repo: "https://github.com/sebastien-mariaux/AdventOfCode2020"
+  }
 ]
 
 export const projectsEn = [
@@ -30,4 +37,11 @@ export const projectsEn = [
     description: 'The division game',
     repo: 'https://github.com/sebastien-mariaux/droiche'
   },
+  {
+    title: "Advent of Code 2020",
+    technos: "Rust",
+    url: "https://adventofcode.com/2020",
+    description: "My take on the famous Christmas coding game.",
+    repo: "https://github.com/sebastien-mariaux/AdventOfCode2020"
+  }
 ]
