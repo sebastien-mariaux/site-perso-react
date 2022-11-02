@@ -8,6 +8,7 @@ export default function Projects() {
   return (
     <>
       <h3>{t('projects.title')}</h3>
+      <p style={{fontFamily: "'Courier New', Courier, monospace", marginBottom: '2em'}}>{t('projects.intro')}</p>
       <div className="normal-content">
         {projects.map(p => {
           return (

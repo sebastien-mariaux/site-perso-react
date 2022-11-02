@@ -21,23 +21,28 @@ export default function Sider({ setDisplaySider }) {
   }
 
 
-  const initialMenu = [
-    { label: t('sider.menu.experiences'), active: true, key: 'experiences' },
-    { label: t('sider.menu.education'), active: false, key: 'education' },
-    { label: t('sider.menu.design'), active: false, key: 'design' },
-    { label: t('sider.menu.skills'), active: false, key: 'skills' },
-    { label: t('sider.menu.projects'), active: false, key: 'projects' }
-  ]
+  const getMenu = (activeItem) => {
+    return (
+      [
+        { label: t('sider.menu.experiences'), active: false, key: 'experiences' },
+        { label: t('sider.menu.education'), active: false, key: 'education' },
+        { label: t('sider.menu.design'), active: false, key: 'design' },
+        { label: t('sider.menu.skills'), active: false, key: 'skills' },
+        { label: t('sider.menu.projects'), active: false, key: 'projects' }
+      ].map(e => {
+        e.active = e.key === activeItem.key
+        return e
+      })
+    )
+  }
 
-  const [menus, setMenus] = useState(initialMenu)
+  const [activeItem, setActiveItem] = useState({key: 'experiences'})
 
   const setItemActive = (item) => {
-    const newMenus = menus.map(e => {
-      e.active = e.key === item.key
-      return e
-    })
-    setMenus(newMenus)
+    setActiveItem(item)
   }
+
+  const menus = getMenu(activeItem)
 
   return (
     <div className='sider'>
@@ -53,7 +58,7 @@ export default function Sider({ setDisplaySider }) {
             </span>
           )
         })}
-        <span className='menu-items'onClick={closeSider}>
+        <span className='menu-items' onClick={closeSider}>
           <i class="fas fa-times"></i>
         </span>
       </div>
