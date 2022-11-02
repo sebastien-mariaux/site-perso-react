@@ -61,10 +61,11 @@ export default function MainPage({ displaySider, setDisplaySider }) {
       <Languages />
       <Description />
       {!displaySider && <button
-        style={{ background: 'none', border: 'none', color: "#fff", marginTop: '40px' }}
+        className="slide"
         onClick={openSider}
       >
-        {t('mainPage.more')}
+        <div>{t('mainPage.more')}</div>
+        <i class="icon-arrow-right"></i>
       </button>}
     </div>
   )

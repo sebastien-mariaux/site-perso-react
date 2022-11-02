@@ -1,6 +1,7 @@
 import Education from "./Education"
 import Experiences from "./Experiences"
 import NoContent from "./NoContent"
+import Projects from "./Projects"
 import Skills from "./Skills"
 
 export default function SiderContent({ menus }) {
@@ -12,8 +13,10 @@ export default function SiderContent({ menus }) {
       return (<Experiences />)
     case 'education':
       return (<Education />)
-    case 'programming':
+    case 'skills':
       return (<Skills />)
+    case 'projects':
+      return (<Projects />)
     case 'design':
       return (<NoContent item={activeItem} />)
     default:

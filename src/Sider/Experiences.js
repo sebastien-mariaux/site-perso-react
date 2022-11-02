@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next"
-import { useMediaQuery } from "react-responsive"
+// import { useMediaQuery } from "react-responsive"
 import { experiencesEn, experiencesFr } from "../data/experiences"
 
 export default function Experiences() {
@@ -7,7 +7,7 @@ export default function Experiences() {
   const { t, i18n } = useTranslation()
 
   const experiences = i18n.language === 'fr' ? experiencesFr : experiencesEn
-  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
+  // const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
 
   return [
     <>
@@ -16,7 +16,7 @@ export default function Experiences() {
         {experiences.map(exp => {
           return (
             <div className="exp-item" >
-              {!isTabletOrMobile && <img src={"/" + exp.img} alt='logo' height={'50px'} style={{marginRight: '12px'}} />}
+              {/* {!isTabletOrMobile && <img src={"/" + exp.img} alt='logo' height={'50px'} style={{marginRight: '12px'}} />} */}
               <div>
                 <div style={{ fontWeight: 'bold' }}>{exp.title}</div>
                 <div style={{ color: '#61dafb' }}>{exp.institution}</div>

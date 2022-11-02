@@ -25,7 +25,8 @@ export default function Sider({ setDisplaySider }) {
     { label: t('sider.menu.experiences'), active: true, key: 'experiences' },
     { label: t('sider.menu.education'), active: false, key: 'education' },
     { label: t('sider.menu.design'), active: false, key: 'design' },
-    { label: t('sider.menu.skills'), active: false, key: 'programming' }
+    { label: t('sider.menu.skills'), active: false, key: 'skills' },
+    { label: t('sider.menu.projects'), active: false, key: 'projects' }
   ]
 
   const [menus, setMenus] = useState(initialMenu)
