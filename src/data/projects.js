@@ -1,3 +1,5 @@
+import listit from '../assets/bin/listit'
+
 export const projectsFr = [
   {
     title: 'sebastien-mariaux.com',
@@ -12,6 +14,13 @@ export const projectsFr = [
     url: 'http://droiche.sebastien-mariaux.com',
     description: 'Le jeu du clivage',
     repo: 'https://github.com/sebastien-mariaux/droiche'
+  },
+  {
+    title: "List-it!",
+    technos: "Rust",
+    url: listit,
+    description: "Un programme en ligne de commande pour faire des listes de choses",
+    repo: 'https://github.com/sebastien-mariaux/list-it'
   },
   {
     title: "Advent of Code 2020",
@@ -36,6 +45,13 @@ export const projectsEn = [
     url: 'http://droiche.sebastien-mariaux.com',
     description: 'The division game',
     repo: 'https://github.com/sebastien-mariaux/droiche'
+  },
+  {
+    title: "List-it!",
+    technos: "Rust",
+    url: listit,
+    description: "A command line tool to create lists of things",
+    repo: 'https://github.com/sebastien-mariaux/list-it'
   },
   {
     title: "Advent of Code 2020",

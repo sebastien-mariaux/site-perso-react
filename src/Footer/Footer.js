@@ -23,7 +23,7 @@ export default function Footer() {
             className='button-like'
             onClick={() => changeLanguageHandler('fr')}
           >
-            French
+            Français
           </span>
         </div>
     </footer>
