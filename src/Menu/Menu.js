@@ -15,12 +15,12 @@ export default function Menu() {
   const getMenu = (activeItem) => {
     return (
       [
-        { label: t('pages.menu.home'), active: false, key: '/' },
-        { label: t('pages.menu.experiences'), active: false, key: 'experiences' },
-        { label: t('pages.menu.education'), active: false, key: 'education' },
-        { label: t('pages.menu.design'), active: false, key: 'design' },
-        { label: t('pages.menu.skills'), active: false, key: 'skills' },
-        { label: t('pages.menu.projects'), active: false, key: 'projects' }
+        { label: t('menu.home'), active: false, key: '/' },
+        { label: t('menu.experiences'), active: false, key: 'experiences' },
+        { label: t('menu.education'), active: false, key: 'education' },
+        { label: t('menu.design'), active: false, key: 'design' },
+        { label: t('menu.skills'), active: false, key: 'skills' },
+        { label: t('menu.projects'), active: false, key: 'projects' }
       ].map(e => {
         e.active = e.key === activeItem.key
         return e

@@ -1,8 +1,6 @@
 import Footer from "./Footer/Footer";
 import { Outlet } from 'react-router-dom';
-import Menu from "./Pages/Menu";
-import { useMediaQuery } from "react-responsive";
-import MobileMenu from "./Pages/MobileMenu";
+import Menu from "./Menu/Menu";
 
 const styles = {
     container: {
