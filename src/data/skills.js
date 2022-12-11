@@ -1,7 +1,7 @@
 export const mainTech = [
   { title: "Ruby on Rails", },
   { title: "Python - Django", },
-  { title: "Javascript - ReactJS", }
+  { title: "Javascript - React.js", }
 ]
 
 export const stack = [

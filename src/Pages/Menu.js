@@ -1,11 +1,15 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useMediaQuery } from "react-responsive";
 import { useNavigate } from "react-router";
+import MainMenu from "./MainMenu";
+import MobileMenu from "./MobileMenu";
 
 export default function Menu() {
 
   const { t } = useTranslation()
   const navigate = useNavigate()
+  const isSmallScreen = useMediaQuery({ query: '(max-width: 650px)' })
 
 
   const getMenu = (activeItem) => {
@@ -24,31 +28,20 @@ export default function Menu() {
     )
   }
 
-  const [activeItem, setActiveItem] = useState({key: 'home'})
+  const [activeItem, setActiveItem] = useState({ key: 'home' })
 
-  const navTo = (item) => {
+  const navTo = (item, afterNav=()=>{}) => {
     navigate(item.key)
     setActiveItem(item)
+    afterNav()
   }
 
   const menus = getMenu(activeItem)
-
   return (
-    <div className='sider'>
-      <div className="menu">
-        {menus.map(m => {
-          return (
-            <span
-              className={`menu-items ${m.active ? 'active' : ''}`}
-              key={m.key}
-              onClick={() => navTo(m)}
-            >
-              {m.label}
-            </span>
-          )
-        })}
-
-      </div>
-    </div>
+    <>
+      {!isSmallScreen && <MainMenu menus={menus} navTo={navTo} />}
+      {isSmallScreen && <MobileMenu menus={menus} navTo={navTo} />}
+    </>
   )
+
 }

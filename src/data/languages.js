@@ -11,7 +11,7 @@ export const languages = [
   },
   {
     key: 'react',
-    name: "ReactJS",
+    name: "React.js",
     color: "#61dafb"
   }
 ]

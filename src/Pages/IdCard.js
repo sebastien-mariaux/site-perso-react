@@ -1,48 +1,40 @@
-import { useState } from "react"
-import { useTranslation } from "react-i18next"
+import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import profile from '../assets/img/profile.jpg'
 import profileHover from '../assets/img/profileHover.jpg'
-import Description from "./Description"
-import Languages from "./Languages"
+import Languages from '../MainPage/Languages'
 
 const styles = {
-  header: {
-    marginTop: '50px',
-    height: '100%',
-    backgroundColor: 'rgb(71, 120, 153)',
-    color: '#fff',
-    textAlign: 'center',
-  },
   profileImgContainer: {
     margin: '20px 0',
     display: 'flex',
     justifyContent: 'space-around',
-    height: '150px'
+    height: '100px'
   },
   profileImg: {
     height: '100%',
-    width: '150px',
+    width: '100px',
     borderRadius: '50%',
     backgroundRepeat: "noRepeat",
     backgroundSize: "150px",
   },
   h1: {
-    fontSize: '1.8rem'
+    fontSize: '1rem',
+    marginTop: 0,
   },
   h2: {
     fontFamily: 'cinzel-bold',
     marginTop: 0,
-    fontSize: '1.8rem'
+    fontSize: '1rem'
   }
 }
 
-export default function MainPage() {
-  const [profileImg, setProfileImg] = useState(profile)
+export default function IdCard() {
   const { t } = useTranslation()
 
+  const [profileImg, setProfileImg] = useState(profile)
   return (
-    <div style={styles.header}>
-      <h2 style={styles.h2}>Sébastien MARIAUX</h2>
+    <div style={{ display: 'flex', marginBottom: '2em' }} className="id-card">
       <div style={styles.profileImgContainer}>
         <img
           src={profileImg}
@@ -52,9 +44,11 @@ export default function MainPage() {
           onMouseOut={() => setProfileImg(profile)}
         />
       </div>
-      <h1 style={styles.h1}>{t('mainPage.role')}</h1>
-      <Languages />
-      <Description />
-    </div>
+      <div style={{ marginLeft: '20px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+        <h2 style={styles.h2}>Sébastien MARIAUX</h2>
+        <h1 style={styles.h1}>{t('mainPage.role')}</h1>
+        <Languages />
+      </div>
+    </div >
   )
 }

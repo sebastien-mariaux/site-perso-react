@@ -34,7 +34,7 @@ export const projectsFr = [
 export const projectsEn = [
   {
     title: 'sebastien-mariaux.com',
-    technos: 'ReactJS',
+    technos: 'React.js',
     url: 'http://sebastien-mariaux.com',
     description: 'My personal website!',
     repo: 'https://github.com/sebastien-mariaux/site-perso-react'
