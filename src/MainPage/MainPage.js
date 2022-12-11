@@ -2,6 +2,7 @@ import { useState } from "react"
 import { useTranslation } from "react-i18next"
 import profile from '../assets/img/profile.jpg'
 import profileHover from '../assets/img/profileHover.jpg'
+import Menu from "../Pages/Menu"
 import Description from "./Description"
 import Languages from "./Languages"
 
@@ -36,16 +37,13 @@ const styles = {
   }
 }
 
-export default function MainPage({ displaySider, setDisplaySider }) {
+export default function MainPage() {
   const [profileImg, setProfileImg] = useState(profile)
   const { t } = useTranslation()
 
-  const openSider = () => {
-    setDisplaySider(true)
-  }
-
 
   return (
+
     <div style={styles.header}>
       <h2 style={styles.h2}>Sébastien MARIAUX</h2>
       <div style={styles.profileImgContainer}>
@@ -60,13 +58,6 @@ export default function MainPage({ displaySider, setDisplaySider }) {
       <h1 style={styles.h1}>{t('mainPage.role')}</h1>
       <Languages />
       <Description />
-      {!displaySider && <button
-        className="slide"
-        onClick={openSider}
-      >
-        <div>{t('mainPage.more')}</div>
-        <i class="icon-arrow-right"></i>
-      </button>}
     </div>
   )
 }

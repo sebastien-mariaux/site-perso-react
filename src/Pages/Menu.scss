@@ -1,0 +1,17 @@
+.menu-items {
+  &:hover {
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  &.active {
+    color: #61dafb;
+    font-weight: bold;
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em
+}

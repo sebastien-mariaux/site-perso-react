@@ -1,48 +1,35 @@
-import { useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.scss';
-import Footer from './Footer/Footer';
 import MainPage from './MainPage/MainPage';
-import Sider from './Sider/Sider';
+import Education from './Pages/Education';
+import Experiences from './Pages/Experiences';
+import Projects from './Pages/Projects';
+import NoContent from "./Pages/NoContent"
+import Skills from './Pages/Skills';
+import Layout from './Layout';
+import PageLayout from './Pages/PageLayout';
 
-const styles = {
-  container: {
-    margin: 'auto',
-    maxWidth: '1500px',
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'space-between',
-    height: '100vh',
-  },
-  panels: {
 
-  }
-}
 
 function App() {
 
-  const [displaySider, setDisplaySider] = useState(false)
-
-  // const isBigScreen = useMediaQuery({ query: '(min-width: 1824px)' })
-  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
-  // const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
-  // const isRetina = useMediaQuery({ query: '(min-resolution: 2dppx)' })
-
-  console.log('displaySider', displaySider)
-  console.log('isTabletOrMobile', isTabletOrMobile)
-  console.log(!displaySider || !isTabletOrMobile)
-  const displayMainPage = !displaySider || !isTabletOrMobile
-  console.log('displayMainPage', displayMainPage)
-
 
   return (
-    <div style={styles.container}>
-      <div className='panels'>
-        {displayMainPage && <MainPage setDisplaySider={setDisplaySider} displaySider={displaySider} />}
-        {displaySider && <Sider setDisplaySider={setDisplaySider} />}
-      </div>
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />} >
+          <Route index element={<MainPage />} />
+          <Route path="" element={<PageLayout />} >
+            <Route path="/experiences/" element={<Experiences />} />
+            <Route path="/education/" element={<Education />} />
+            <Route path="/design/" element={<NoContent />} />
+            <Route path="/skills/" element={<Skills />} />
+            <Route path="/projects/" element={<Projects />} />
+          </Route>
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
