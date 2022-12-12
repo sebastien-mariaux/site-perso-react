@@ -11,9 +11,9 @@ export default function Education() {
     <>
       <h3 style={{ color: '#fff' }}>{t('education.title')}</h3>
       <div className="normal-content">
-        {education.map(exp => {
+        {education.map((exp, index )=> {
           return (
-            <div className="exp-item" >
+            <div className="exp-item" key={index} >
               <div>
                 <div>
                   <span style={{ fontStyle: 'italic', marginRight: '24px' }}>{exp.date}</span>

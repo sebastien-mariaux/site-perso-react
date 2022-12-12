@@ -8,9 +8,29 @@ import Skills from '../Pages/Skills';
 import Layout from '../Layout';
 import PageLayout from '../Pages/PageLayout';
 import Design from '../Pages/Design';
-
+import { useEffect } from 'react';
+import eventBus from './eventBus';
 
 function App() {
+
+  useEffect(() => {
+    document.addEventListener("click", (e) => {
+      let clickedElt = e.target;
+      const menuElt = document.querySelector('.mobile-menu-wrapper')
+      let menuEltClicked = false
+      do {
+        if (menuElt === clickedElt) {
+          menuEltClicked = true
+          break
+        }
+        clickedElt = clickedElt.parentNode;
+      } while (clickedElt)
+
+      if (!menuEltClicked) {
+        eventBus.dispatch('closeMenu')
+      }
+    })
+  })
 
   return (
     <BrowserRouter>

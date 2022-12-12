@@ -9,10 +9,10 @@ export default function Skills() {
       <h3>{t('skills.title')}</h3>
 
       <h4 style={{ fontFamily: "'Courier New', Courier, monospace" }}>{t('skills.mainLanguages')}</h4>
-      <div class='normal-content' >
+      <div className='normal-content' >
         {mainTech.map(tech => {
           return (
-            <div style={{}}>
+            <div style={{}} key={tech.key}>
               {tech.title}
             </div>
           )
@@ -20,10 +20,10 @@ export default function Skills() {
       </div>
 
       <h4 style={{ fontFamily: "'Courier New', Courier, monospace" }}>{t('skills.generalStack')}</h4>
-      <div class='normal-content' >
+      <div className='normal-content' >
         {stack.map(tech => {
           return (
-            <div style={{}}>
+            <div style={{}} key={tech.key}>
               {tech.title}
             </div>
           )

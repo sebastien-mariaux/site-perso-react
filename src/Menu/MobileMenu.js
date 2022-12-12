@@ -1,4 +1,5 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
+import eventBus from "../App/eventBus"
 
 const styles = {
   menuContainer: {
@@ -16,20 +17,24 @@ export default function MobileMenu({ menus, navTo }) {
   const [display, setDisplay] = useState(false)
 
   const toggleDisplay = () => {
-    console.log('ok')
     if (display) {
       setDisplay(false)
     } else {
       setDisplay(true)
     }
   }
-  console.log(display)
+
+  useEffect(()=>{
+    eventBus.on("closeMenu", ()=>{setDisplay(false)})
+  })
+
   return (
-    <>
+    <div className="mobile-menu-wrapper">
       <div
+        className="open-menu"
         style={{ paddingLeft: '0.5em', paddingTop: '0.5em' }}
       >
-        <i class="fas fa-bars" onClick={toggleDisplay}></i>
+        <i className="fas fa-bars" onClick={toggleDisplay}></i>
       </div>
       {display && <div style={styles.menuContainer}>
         <div className="mobile-menu">
@@ -46,6 +51,6 @@ export default function MobileMenu({ menus, navTo }) {
           })}
         </div>
       </div>}
-    </>
+    </div>
   )
 }

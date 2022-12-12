@@ -17,7 +17,7 @@ export default function Projects() {
                 <div style={{ fontWeight: 'bold' }}>{p.title} - {p.description}</div>
                 <div style={{ color: '#61dafb' }}>{p.technos}</div>
                 <a style={{ color: '#fff', fontSize: '25px', marginRight: '0.5em' }} href={p.repo}><i className="fab fa-github"></i></a>
-                <a style={{ color: '#fff', fontSize: '25px' }} href={p.url}><i class="fas fa-external-link-alt"></i>  </a>
+                <a style={{ color: '#fff', fontSize: '25px' }} href={p.url}><i className="fas fa-external-link-alt"></i>  </a>
               </div>
             </div>
           )

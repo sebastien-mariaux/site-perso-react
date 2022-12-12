@@ -17,9 +17,8 @@ const styles = {
   }
 
 export default function Layout() {
-
   return (
-    <div style={styles.mainContainer}>
+    <div style={styles.mainContainer}  >
       <Menu />
       <div style={styles.container}>
         <div><Outlet /></div>
