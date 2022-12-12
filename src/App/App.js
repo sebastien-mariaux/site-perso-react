@@ -1,18 +1,16 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.scss';
-import MainPage from './MainPage/MainPage';
-import Education from './Pages/Education';
-import Experiences from './Pages/Experiences';
-import Projects from './Pages/Projects';
-import Skills from './Pages/Skills';
-import Layout from './Layout';
-import PageLayout from './Pages/PageLayout';
-import Design from './Pages/Design';
-
+import MainPage from '../MainPage/MainPage';
+import Education from '../Pages/Education';
+import Experiences from '../Pages/Experiences';
+import Projects from '../Pages/Projects';
+import Skills from '../Pages/Skills';
+import Layout from '../Layout';
+import PageLayout from '../Pages/PageLayout';
+import Design from '../Pages/Design';
 
 
 function App() {
-
 
   return (
     <BrowserRouter>

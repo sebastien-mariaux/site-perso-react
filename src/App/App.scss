@@ -1,17 +1,17 @@
-@import 'MainPage/Languages.scss';
-@import 'Menu/Menu.scss';
-@import 'Pages/experiences.scss';
+@import '../MainPage/Languages.scss';
+@import '../Menu/Menu.scss';
+@import '../Pages/experiences.scss';
 
 @font-face {
   font-family: "cinzel";
   src: local('cinzel'),
-    url("./assets/fonts/cinzel/Cinzel-Regular.otf") format("truetype");
+    url("../assets/fonts/cinzel/Cinzel-Regular.otf") format("truetype");
 }
 
 @font-face {
   font-family: "cinzel-bold";
   src: local('cinzel-bold'),
-    url("./assets/fonts/cinzel/Cinzel-Bold.otf") format("truetype");
+    url("../assets/fonts/cinzel/Cinzel-Bold.otf") format("truetype");
 }
 
 header h2 {
