@@ -1,6 +1,5 @@
-import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import profile from '../assets/img/profile2.jpg'
+
 import profileHover from '../assets/img/profileHover.jpg'
 import Languages from '../MainPage/Languages'
 
@@ -29,19 +28,18 @@ const styles = {
   }
 }
 
-export default function IdCard() {
+export default function IdCard({profileImg, currentImg, setCurrentImg}) {
   const { t } = useTranslation()
 
-  const [profileImg, setProfileImg] = useState(profile)
   return (
     <div style={{ display: 'flex', marginBottom: '2em' }} className="id-card">
       <div style={styles.profileImgContainer}>
         <img
-          src={profileImg}
+          src={currentImg}
           alt='profile'
           style={styles.profileImg}
-          onMouseOver={() => setProfileImg(profileHover)}
-          onMouseOut={() => setProfileImg(profile)}
+          onMouseOver={() => setCurrentImg(profileHover)}
+          onMouseOut={() => setCurrentImg(profileImg)}
         />
       </div>
       <div style={{ marginLeft: '20px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>

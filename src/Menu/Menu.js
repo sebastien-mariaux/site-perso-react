@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useMediaQuery } from "react-responsive";
 import { useNavigate } from "react-router";
+import eventBus from "../App/eventBus";
 import MainMenu from "./MainMenu";
 import MobileMenu from "./MobileMenu";
 
@@ -28,11 +29,12 @@ export default function Menu() {
     )
   }
 
-  const [activeItem, setActiveItem] = useState({ key: 'home' })
+  const [activeItem, setActiveItem] = useState({ key: 'home' });
 
   const navTo = (item, afterNav=()=>{}) => {
     navigate(item.key)
     setActiveItem(item)
+    eventBus.dispatch("changePage", {key: item.key})
     afterNav()
   }
 

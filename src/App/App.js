@@ -8,10 +8,14 @@ import Skills from '../Pages/Skills';
 import Layout from '../Layout';
 import PageLayout from '../Pages/PageLayout';
 import Design from '../Pages/Design';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import eventBus from './eventBus';
+import profile from '../assets/img/profile.jpg'
+import { setImages } from './appHelper';
 
 function App() {
+  const [profileImg, setProfileImg] = useState()
+  const [currentImg, setCurrentImg] = useState()
 
   useEffect(() => {
     document.addEventListener("click", (e) => {
@@ -32,12 +36,22 @@ function App() {
     })
   })
 
+
+  useEffect(() => {
+    setImages({key: window.location.pathname.replace('/', '')}, setProfileImg, setCurrentImg)
+    eventBus.on("changePage", (data) => setImages(data, setProfileImg, setCurrentImg))
+  }, [window.location.pathname])
+
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />} >
           <Route index element={<MainPage />} />
-          <Route path="" element={<PageLayout />} >
+          <Route path="" element={<PageLayout
+            profileImg={profileImg}
+            currentImg={currentImg}
+            setCurrentImg={setCurrentImg}
+          />} >
             <Route path="/experiences/" element={<Experiences />} />
             <Route path="/education/" element={<Education />} />
             <Route path="/design/" element={<Design />} />
