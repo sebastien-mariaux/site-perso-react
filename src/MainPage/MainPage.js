@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { useTranslation } from "react-i18next"
-import profile from '../assets/img/profile.jpg'
+import profile from '../assets/img/profile2.jpg'
 import profileHover from '../assets/img/profileHover.jpg'
 import Description from "./Description"
 import Languages from "./Languages"
