@@ -28,6 +28,13 @@ export const projectsFr = [
     url: "https://adventofcode.com/2020",
     description: "Ma participation au grand jeu de Noël.",
     repo: "https://github.com/sebastien-mariaux/AdventOfCode2020"
+  },
+  {
+    title: "Advent of Code 2022",
+    technos: "Python",
+    url: "https://adventofcode.com/2022",
+    description: "Oops, I did it again!",
+    repo: "https://github.com/sebastien-mariaux/AdventOfCode2022"
   }
 ]
 
@@ -59,5 +66,12 @@ export const projectsEn = [
     url: "https://adventofcode.com/2020",
     description: "My take on the famous Christmas coding game.",
     repo: "https://github.com/sebastien-mariaux/AdventOfCode2020"
+  },
+  {
+    title: "Advent of Code 2022",
+    technos: "Python",
+    url: "https://adventofcode.com/2022",
+    description: "Oops, I did it again!",
+    repo: "https://github.com/sebastien-mariaux/AdventOfCode2022"
   }
 ]
