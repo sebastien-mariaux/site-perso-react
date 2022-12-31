@@ -9,7 +9,7 @@
   flex-direction: column;
 
   .menu-items {
-    margin:  5px 0;
+    margin: 5px 0;
   }
 }
 
@@ -22,5 +22,13 @@
   &.active {
     color: #61dafb;
     font-weight: bold;
+  }
+}
+
+.menu,
+.mobile-menu {
+  a {
+    color: #000;
+    text-decoration: none;
   }
 }

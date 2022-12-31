@@ -31,10 +31,10 @@ export default function Menu() {
 
   const [activeItem, setActiveItem] = useState({ key: 'home' });
 
-  const navTo = (item, afterNav=()=>{}) => {
+  const navTo = (item, afterNav = () => { }) => {
     navigate(item.key)
     setActiveItem(item)
-    eventBus.dispatch("changePage", {key: item.key})
+    eventBus.dispatch("changePage", { key: item.key })
     afterNav()
   }
 

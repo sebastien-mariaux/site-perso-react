@@ -24,8 +24,8 @@ export default function MobileMenu({ menus, navTo }) {
     }
   }
 
-  useEffect(()=>{
-    eventBus.on("closeMenu", ()=>{setDisplay(false)})
+  useEffect(() => {
+    eventBus.on("closeMenu", () => { setDisplay(false) })
   })
 
   return (
@@ -49,6 +49,7 @@ export default function MobileMenu({ menus, navTo }) {
               </span>
             )
           })}
+          <span className="menu-items"><a href="http://blog.sebastien-mariaux.com">Blog</a></span>
         </div>
       </div>}
     </div>

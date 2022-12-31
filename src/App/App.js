@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import './App.scss';
 import MainPage from '../MainPage/MainPage';
 import Education from '../Pages/Education';
@@ -10,7 +10,6 @@ import PageLayout from '../Pages/PageLayout';
 import Design from '../Pages/Design';
 import { useEffect, useState } from 'react';
 import eventBus from './eventBus';
-import profile from '../assets/img/profile.jpg'
 import { setImages } from './appHelper';
 
 function App() {

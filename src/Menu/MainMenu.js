@@ -12,6 +12,7 @@ export default function MainMenu({ menus, navTo }) {
           </span>
         )
       })}
+      <span className="menu-items"><a href="http://blog.sebastien-mariaux.com">Blog</a></span>
     </div>
   )
 }
