@@ -1,6 +1,7 @@
 {
   "education.title": "Education",
   "experiences.title": "Professional experiences",
+  "footer.legal-infos": "Legal notice",
   "mainPage.age": "{{age}} years old",
   "mainPage.codeSince": "Code since 2015",
   "mainPage.experience": "{{experience}} year of corporate experience",

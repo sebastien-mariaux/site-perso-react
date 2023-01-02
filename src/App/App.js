@@ -11,6 +11,7 @@ import Design from '../Pages/Design';
 import { useEffect, useState } from 'react';
 import eventBus from './eventBus';
 import { setImages } from './appHelper';
+import LegalInfo from './LegalInfo';
 
 function App() {
   const [profileImg, setProfileImg] = useState()
@@ -37,7 +38,7 @@ function App() {
 
 
   useEffect(() => {
-    setImages({key: window.location.pathname.replace('/', '')}, setProfileImg, setCurrentImg)
+    setImages({ key: window.location.pathname.replace('/', '') }, setProfileImg, setCurrentImg)
     eventBus.on("changePage", (data) => setImages(data, setProfileImg, setCurrentImg))
   }, [window.location.pathname])
 
@@ -57,6 +58,7 @@ function App() {
             <Route path="/skills/" element={<Skills />} />
             <Route path="/projects/" element={<Projects />} />
           </Route>
+          <Route path="/mentions-legales/" element={<LegalInfo />} />
         </Route>
       </Routes>
     </BrowserRouter>
