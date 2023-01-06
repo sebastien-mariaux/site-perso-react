@@ -1,12 +1,10 @@
-import cvFr from '../assets/docs/cv_fr.pdf'
-import cvEn from '../assets/docs/cv_en.pdf'
 import { useTranslation } from 'react-i18next'
 
 export default function Socials() {
 
   const { i18n } = useTranslation()
 
-  const cv = i18n.language === 'fr' ? cvFr : cvEn
+  const cv_path = i18n.language === 'fr' ? "/cv_mariaux_fr.pdf" :  "/cv_mariaux_en.pdf"
 
   return (
     <>
@@ -25,7 +23,7 @@ export default function Socials() {
           title="LinkedIn">
           <i className="fab fa-linkedin fa-2x "></i>
         </a>
-        <a href={cv}
+        <a href={cv_path}
           className="cv"
           target="_blank"
           rel="noreferrer"
