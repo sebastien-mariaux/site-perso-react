@@ -15,7 +15,7 @@ export default function LegalInfo() {
         ARTICLE 1 - L'EDITEUR
       </h2>
       <p>
-        L'édition du Site est assurée par Sébastien Mariaux Développement SASU au capital de 2000 euros, immatriculée au Registre du Commerce et des Sociétés de _______________ sous le numéro _______________ dont le siège social est situé au _______________,
+        L'édition du Site est assurée par Sébastien Mariaux Développement SASU au capital de 2000 euros, immatriculée au Registre du Commerce et des Sociétés d'Aix-en-Provence sous le numéro 922671011 dont le siège social est situé au 255 AV JOSEPH VILLEVIEILLE 13100 Aix-en-Provence.
       </p>
       <ul>
         <li>
