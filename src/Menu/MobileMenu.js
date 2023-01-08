@@ -49,7 +49,7 @@ export default function MobileMenu({ menus, navTo }) {
               </span>
             )
           })}
-          <span className="menu-items"><a href="http://blog.sebastien-mariaux.com">Blog</a></span>
+          <span className="menu-items"><a href="https://journaldedev.fr">Blog</a></span>
         </div>
       </div>}
     </div>
