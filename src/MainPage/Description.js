@@ -1,16 +1,16 @@
 import { useTranslation } from "react-i18next"
-import { getAge, getExperience } from "./MainPageHelper"
+import { getAge } from "./MainPageHelper"
 
 export default function Description() {
   const { t } = useTranslation()
   const age = getAge()
-  const experience = getExperience()
+  // const experience = getExperience()
   return (
     <div className='description'>
       <p>{t('mainPage.age', { age: age })}</p>
       <p> Aix-en-Provence, France </p>
       <p>{t('mainPage.codeSince')}</p>
-      <p> {t('mainPage.experience', { experience: experience })}</p>
+      {/* <p> {t('mainPage.experience', { experience: experience })}</p> */}
     </div>
   )
 }
