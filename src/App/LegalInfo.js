@@ -25,7 +25,7 @@ export default function LegalInfo() {
           Adresse e-mail : website.lzimg@simplelogin.com.
         </li>
         <li>
-          N° de TVA intracommunautaire : FR43922539333
+          N° de TVA intracommunautaire : FR93922671011
         </li>
         <li>
           Le Directeur de la publication est Sébastien Mariaux
