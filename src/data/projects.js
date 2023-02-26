@@ -9,6 +9,13 @@ export const projectsFr = [
     repo: 'https://github.com/sebastien-mariaux/site-perso-react'
   },
   {
+    title: "Freelance Planner",
+    technos: 'ReactJS, TypeScript',
+    url: 'https://freelance-planner.sebastien-mariaux.com/',
+    description: 'Un calculateur des charges et revenus en freelance',
+    repo: "https://github.com/sebastien-mariaux/freelance_planner"
+  },
+  {
     title: 'Droiche',
     technos: 'VueJS, Flask (Python)',
     url: 'http://droiche.sebastien-mariaux.com',
@@ -45,6 +52,13 @@ export const projectsEn = [
     url: 'http://sebastien-mariaux.com',
     description: 'My personal website!',
     repo: 'https://github.com/sebastien-mariaux/site-perso-react'
+  },
+  {
+    title: "Freelance Planner",
+    technos: 'ReactJS, TypeScript',
+    url: 'https://freelance-planner.sebastien-mariaux.com/',
+    description: 'A calculator for freelance charges and revenues',
+    repo: "https://github.com/sebastien-mariaux/freelance_planner"
   },
   {
     title: 'Droiche',

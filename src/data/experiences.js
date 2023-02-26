@@ -1,9 +1,14 @@
 
 export const experiencesFr = [
   {
+    institution: 'Indépendant',
+    title: "Développeur Web",
+    dates: 'Depuis janvier 2023'
+  },
+  {
     institution: 'Servebox',
     title: "Développeur Full-Stack (Ruby on Rails - React)",
-    dates: 'Depuis août 2019',
+    dates: 'Août 2019 à novembre 2022 (> 3 ans)',
     img: 'rails.png'
   },
   {
@@ -34,9 +39,14 @@ export const experiencesFr = [
 
 export const experiencesEn = [
   {
+    institution: 'Freelance',
+    title: "Web Developer",
+    dates: 'Since January 2023'
+  },
+  {
     institution: 'Servebox',
     title: "Full-Stack developer (Ruby on Rails - React)",
-    dates: 'Since August 2019',
+    dates: 'August 2019 - Nov. 2022 (> 3 years)',
     img: 'rails.png'
   },
   {
