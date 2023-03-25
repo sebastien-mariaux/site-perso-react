@@ -16,6 +16,13 @@ export const projectsFr = [
     repo: "https://github.com/sebastien-mariaux/freelance_planner"
   },
   {
+    title: 'BlindJourney',
+    technos: 'Django, Django-unicorn',
+    url: 'http://blindjourney.sebastien-mariaux.com',
+    description: 'Un blind test particulier : retrouver les prompts utilisés pour générer des images avec Midjourney',
+    repo: 'https://github.com/sebastien-mariaux/BlindJourney'
+  },
+  {
     title: 'Droiche',
     technos: 'VueJS, Flask (Python)',
     url: 'http://droiche.sebastien-mariaux.com',
@@ -59,6 +66,13 @@ export const projectsEn = [
     url: 'https://freelance-planner.sebastien-mariaux.com/',
     description: 'A calculator for freelance charges and revenues',
     repo: "https://github.com/sebastien-mariaux/freelance_planner"
+  },
+  {
+    title: 'BlindJourney',
+    technos: 'Django, Django-unicorn',
+    url: 'http://blindjourney.sebastien-mariaux.com',
+    description: 'A kind of blind test where one should guess the prompt used to generate images with Midjourney',
+    repo: 'https://github.com/sebastien-mariaux/BlindJourney'
   },
   {
     title: 'Droiche',
