@@ -1,0 +1,22 @@
+{
+  "education.title": "Formación",
+  "experiences.title": "Experiencia profesional",
+  "footer.legal-infos": "Aviso legal",
+  "mainPage.age": "{{age}} años",
+  "mainPage.codeSince": "Desarolla desde 2015",
+  "mainPage.experience": "{{experience}} años de experiencia profesional",
+  "mainPage.more": "Más información...",
+  "mainPage.role": "Programador web",
+  "menu.experiences": "Experiencias",
+  "menu.education": "Formación",
+  "menu.design": "UI/UX",
+  "menu.home": "Perfil",
+  "menu.projects": "Realizaciones",
+  "menu.skills": "Stack",
+  "pages.design": "Conocimientos de diseño y UI/UX",
+  "projects.intro": "Tengo tendencia a empezar montones de proyectos personales, sólo para aburrirme de ellos antes de terminarlos... ¡aquí van unos cuantos que he completado!",
+  "projects.title": "Realizaciones",
+  "skills.generalStack": "Entorno técnico",
+  "skills.mainLanguages": "Tecnologías preferidas",
+  "skills.title": "Stack"
+}

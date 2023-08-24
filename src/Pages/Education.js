@@ -1,12 +1,25 @@
 import { useTranslation } from "react-i18next"
-import { educationEn, educationFr } from "../data/education"
+import { educationEn, educationFr, educationEs } from "../data/education"
 
 export default function Education() {
 
   const { t, i18n } = useTranslation()
 
-  const education = i18n.language === 'fr' ? educationFr : educationEn
 
+  let education = []
+  switch (i18n.language) {
+    case 'fr':
+      education = educationFr
+      break
+    case 'en':
+      education = educationEn
+      break
+    case 'es':
+      education = educationEs
+      break
+    default:
+      education = educationEn
+  }
   return [
     <>
       <h3 style={{ color: '#fff' }}>{t('education.title')}</h3>

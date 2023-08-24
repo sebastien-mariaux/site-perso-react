@@ -74,3 +74,43 @@ export const experiencesEn = [
     img: 'accounting.jpg'
   },
 ]
+
+
+export const experiencesEs = [
+  {
+    institution: 'Freelance',
+    title: "Programador Web",
+    dates: 'Desde enero de 2023'
+  },
+  {
+    institution: 'Servebox',
+    title: "Full-Stack programador (Ruby on Rails - React)",
+    dates: 'Agosto 2019 - Nov. 2022 (> 3 años)',
+    img: 'rails.png'
+  },
+  {
+    institution: 'High-Testing R&D',
+    dates: "Oct. 2018 - Julio 2019 (10 meses)",
+    title: "Backend programador (Python-Django)",
+    img: 'django.png'
+  },
+  {
+    institution: 'Universidad de Aix-Marseille – IAE',
+    dates: "Oct. 2015 - Sept. 2018 (3 años)",
+    title: "Profesor adjunto &  investigador (estudiante de doctorado)",
+    img: 'graduate.png'
+  },
+  {
+    institution: 'Mazars Conseil',
+    dates: "Sept. 2013 - Agosto 2015 (2 years)",
+    title: "Consultor de management - Jefe de proyectos informáticos",
+    img: 'business.png'
+  },
+  {
+    institution: 'CACEIS (grupo Crédit Agricole)',
+    dates: "Sept. 2009 - Agosto 2011 (2 years)",
+    title: "Asistente contable (aprendizaje)",
+    img: 'accounting.jpg'
+  },
+]
+

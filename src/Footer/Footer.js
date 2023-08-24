@@ -25,6 +25,13 @@ export default function Footer() {
           >
             Français
           </span>
+          <span> - </span>
+          <span
+            className='button-like'
+            onClick={() => changeLanguageHandler('es')}
+          >
+            Español
+          </span>
         </div>
         <div style={{marginBottom: '50px', marginTop: '10px'}}>
           <a href='mentions-legales'>{i18n.t('footer.legal-infos')}</a>

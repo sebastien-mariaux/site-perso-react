@@ -1,9 +1,23 @@
 import { useTranslation } from "react-i18next"
-import { experiencesEn, experiencesFr } from "../data/experiences"
+import { experiencesEn, experiencesFr, experiencesEs } from "../data/experiences"
 
 export default function Experiences() {
   const { t, i18n } = useTranslation()
-  const experiences = i18n.language === 'fr' ? experiencesFr : experiencesEn
+
+  let experiences = []
+  switch (i18n.language) {
+    case 'fr':
+      experiences = experiencesFr
+      break
+    case 'en':
+      experiences = experiencesEn
+      break
+    case 'es':
+      experiences = experiencesEs
+      break
+    default:
+      experiences = experiencesEn
+  }
 
   return [
     <>

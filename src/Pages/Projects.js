@@ -1,10 +1,25 @@
 import { useTranslation } from "react-i18next"
-import { projectsEn, projectsFr } from "../data/projects.js"
+import { projectsEn, projectsEs, projectsFr } from "../data/projects.js"
 
 export default function Projects() {
   const { t, i18n } = useTranslation()
 
-  const projects = i18n.language === 'fr' ? projectsFr : projectsEn
+  // const projects = i18n.language === 'fr' ? projectsFr : projectsEn
+  let projects = []
+  switch (i18n.language) {
+    case 'fr':
+      projects = projectsFr
+      break
+    case 'en':
+      projects = projectsEn
+      break
+    case 'es':
+      projects = projectsEs
+      break
+    default:
+      projects = projectsEn
+  }
+
   return (
     <>
       <h3>{t('projects.title')}</h3>

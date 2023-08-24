@@ -103,3 +103,55 @@ export const projectsEn = [
     repo: "https://github.com/sebastien-mariaux/AdventOfCode2022"
   }
 ]
+
+export const projectsEs = [
+  {
+    title: 'sebastien-mariaux.com',
+    technos: 'React.js',
+    url: 'http://sebastien-mariaux.com',
+    description: 'Mi sitio web personal!',
+    repo: 'https://github.com/sebastien-mariaux/site-perso-react'
+  },
+  {
+    title: "Freelance Planner",
+    technos: 'ReactJS, TypeScript',
+    url: 'https://freelance-planner.sebastien-mariaux.com/',
+    description: 'Un calculador de cargas y ingresos de freelance',
+    repo: "https://github.com/sebastien-mariaux/freelance_planner"
+  },
+  {
+    title: 'BlindJourney',
+    technos: 'Django, Django-unicorn',
+    url: 'http://blindjourney.sebastien-mariaux.com',
+    description: 'Un tipo de juego de adivinanzas donde uno debe adivinar el prompt utilizado para generar imágenes con Midjourney',
+    repo: 'https://github.com/sebastien-mariaux/BlindJourney'
+  },
+  {
+    title: 'Droiche',
+    technos: 'VueJS, Flask (Python)',
+    url: 'http://droiche.sebastien-mariaux.com',
+    description: 'El juego de la división',
+    repo: 'https://github.com/sebastien-mariaux/droiche'
+  },
+  {
+    title: "List-it!",
+    technos: "Rust",
+    url: listit,
+    description: "Una herramienta de línea de comandos para crear listas de cosas",
+    repo: 'https://github.com/sebastien-mariaux/list-it'
+  },
+  {
+    title: "Advent of Code 2020",
+    technos: "Rust",
+    url: "https://adventofcode.com/2020",
+    description: "Mi participación en el famoso juego de codificación navideño.",
+    repo: "https://github.com/sebastien-mariaux/AdventOfCode2020"
+  },
+  {
+    title: "Advent of Code 2022",
+    technos: "Python",
+    url: "https://adventofcode.com/2022",
+    description: "Oops, I did it again!",
+    repo: "https://github.com/sebastien-mariaux/AdventOfCode2022"
+  }
+]

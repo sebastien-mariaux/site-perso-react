@@ -63,3 +63,31 @@ export const educationEn = [
     institution: "Limosin High School – Limoges"
   }
 ]
+
+export const educationEs = [
+  {
+    date: '2019',
+    title: "Doctorado en Ciencias de la Gestión",
+    institution: "Universidad Aix-Marseille - IAE"
+  },
+  {
+    date: '2013',
+    title: "Máster en Investigación y Consultoría",
+    institution: "Universidad Aix-Marseille - IAE"
+  },
+  {
+    date: '2011',
+    title: "Máster de Gestión (1er año) - Curso en aprendizaje",
+    institution: "Universidad Paris Dauphine"
+  },
+  {
+    date: '2007',
+    title: "1er año de clase preparatoria para escuelas de ingeniería",
+    institution: "Liceo Gay Lussac - Limoges"
+  },
+  {
+    date: '2006',
+    title: "Bachillerato científico",
+    institution: "Liceo Limosin – Limoges"
+  }
+]
