@@ -12,7 +12,6 @@ export default function MainMenu({ menus, navTo }) {
           </span>
         )
       })}
-      <span className="menu-items"><a href="https://journaldedev.fr">Blog</a></span>
     </div>
   )
 }
