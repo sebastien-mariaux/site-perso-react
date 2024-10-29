@@ -1,9 +1,14 @@
 
 export const experiencesFr = [
   {
-    institution: 'Indépendant',
-    title: "Développeur Web",
-    dates: 'Depuis janvier 2023'
+    institution: 'Qonto - Regate',
+    title: "Développeur Backend (Ruby on Rails) - Freelance",
+    dates: 'Avril 2023 - Décembre 2024 (~2 ans)'
+  },
+  {
+    institution: 'Ajonc',
+    title: "Développeur Web et mobile - Freelance",
+    dates: 'Janvier - Mars 2023 (3 mois)'
   },
   {
     institution: 'Servebox',
@@ -39,9 +44,14 @@ export const experiencesFr = [
 
 export const experiencesEn = [
   {
-    institution: 'Freelance',
-    title: "Web Developer",
-    dates: 'Since January 2023'
+    institution: 'Qonto - Regate',
+    title: "Backend Developer (Ruby on Rails) - Freelance",
+    dates: 'April 2023 - December 2024 (~2 years)'
+  },
+  {
+    institution: 'Ajonc',
+    title: "Mobile and web developer - Freelance",
+    dates: 'January - March 2023 (3 months)'
   },
   {
     institution: 'Servebox',
@@ -78,9 +88,14 @@ export const experiencesEn = [
 
 export const experiencesEs = [
   {
-    institution: 'Freelance',
-    title: "Programador Web",
-    dates: 'Desde enero de 2023'
+    institution: 'Qonto - Regate',
+    title: "Backend programador (Ruby on Rails) - Freelance",
+    dates: 'Abril 2023 - Diciembre 2024 (~2 años)'
+  },
+  {
+    institution: 'Ajonc',
+    title: "Mobil y web programador - Freelance",
+    dates: 'Enero - Marzo 2023 (3 meses)'
   },
   {
     institution: 'Servebox',
